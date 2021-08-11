@@ -200,4 +200,36 @@
    text-align: center;
 }
 
+.client-testimonials-title{
+   text-align: center;
+}
 
+.client-testimonials{
+   height: 100vh;
+   padding: 15% 15%;
+   display: flex;
+   justify-content: center;
+
+}
+
+.client-testimonials img{
+   border-radius: 50%;
+   width: 100px;
+   height: auto;
+   display: flex;
+   justify-content: center;
+}
+
+.client-testimonials p{ 
+   text-align: center;
+}
+
+.images{
+   width: 100%;
+   display: flex;
+}
+
+.images img{
+   height: auto;
+   width: 25%;
+}
