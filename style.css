@@ -1,3 +1,18 @@
+
+:root {
+   --Soft-red: hsl(7, 99%, 70%);
+   --Softer-red: hsl(7, 53%, 59%);
+   --Yellow: hsl(51, 100%, 49%);
+   --Soft-yellow: hsl(51, 64%, 55%);
+   --Dark-desaturated-cyan: hsl(167, 40%, 24%);
+   --Dark-blue: hsl(198, 62%, 26%);
+   --Dark-moderate-cyan: hsl(168, 63%, 45%);
+   --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+   --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+   --Dark-grayish-blue: hsl(232, 10%, 55%);
+   --Grayish-blue: hsl(210, 4%, 67%);
+   --White: hsl(0, 0%, 100%);
+}
 *{
     box-sizing: border-box; /*para que ocupen el especiado externo e interno, sumen un solo espaciado */
     margin:0;
@@ -201,27 +216,54 @@
 }
 
 .client-testimonials-title{
+   padding-top: 200px ;
+   padding-bottom: 0;
+   font-size: 20px;
    text-align: center;
+   letter-spacing: 5px;
+   color:hsl(210, 4%, 67%);
 }
 
 .client-testimonials{
-   height: 100vh;
-   padding: 15% 15%;
+   height: 80vh;
+   padding: 5% 5%;
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
 
+}
+
+.client-testimonials div{
+   margin: 0 20px 0 20px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   align-content: space-between;
 }
 
 .client-testimonials img{
    border-radius: 50%;
-   width: 100px;
+   width: 80px;
    height: auto;
-   display: flex;
-   justify-content: center;
+   
+   
 }
 
 .client-testimonials p{ 
+   margin-top: 50px ;
+   font-size: 20px;
    text-align: center;
+   color:hsl(232, 10%, 55%);
+}
+
+.client-testimonials h3{ 
+   margin-top: 60px ;
+   font-size: 18px;
+   color: hsl(212, 27%, 19%);
+}
+.client-testimonials span{
+   margin-top: 10px ;
+   font-size: 15px;
+   color: hsl(210, 4%, 67%);
 }
 
 .images{
@@ -233,3 +275,47 @@
    height: auto;
    width: 25%;
 }
+
+footer{
+   height: 50vh;
+   background-color: var(--Dark-moderate-cyan);
+   color: var(--Dark-desaturated-cyan);
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.footer-logo{
+   color: var(--Dark-desaturated-cyan);
+   margin-top:5%;
+   
+}
+
+footer ul{
+   display: flex;
+   justify-content: center;
+}
+
+footer ul li{
+   padding: 40px 40px;
+}
+
+footer ul li a{
+   color: var(--Dark-desaturated-cyan);
+}
+
+footer ul li a:hover{
+   color: white;
+}
+
+.social-links{
+   display: flex;
+   justify-content: center;
+}
+
+.social-links img{
+
+   padding: 0 20px 40px 20px;
+
+}
+
