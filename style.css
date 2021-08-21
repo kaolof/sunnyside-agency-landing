@@ -71,12 +71,16 @@
  }
 
 .contact{
-   background: white;
-   padding: 10px 20px ;
+   background:hsl(0, 0%, 100%, .4) ;
+   padding: 10px 25px ;
    border-radius: 20px;
    font-family: 'Fraunces', serif;
    font-size: 13px;
    color: black;
+ }
+
+ .contact:hover{
+   background:hsl(0, 0%, 100%) ;
  }
 
  .menu-btn{
@@ -329,10 +333,47 @@ footer ul li a:hover{
    padding: 0 20px 40px 20px;
 
 }
+
+.attribution{
+   text-align: center;
+}
+
 @media (max-width:700px){
+
    header img{
       padding-top:15px;
       padding-left:10px ;
+   }
+
+   header{
+      background-image: url(./images/mobile/image-header.jpg);
+      background-position: 100%;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 100%;
+      height: 70vh;
+      
+   }
+
+   header h1{
+      font-size: 45px ;
+      margin-top: 150px;
+      text-align: center;
+      letter-spacing: 10px;
+      color: white;
+
+   }
+
+   .arrow-img{
+      display:flex;
+      justify-content: center;
+      align-items: center;
+   }
+  
+   .arrow-img img{
+      margin-top: 15px;
+      height: 100px;
+      width:40px;
    }
   
    .nav-bar ul{
@@ -344,17 +385,19 @@ footer ul li a:hover{
       width: 50vw;
       height: 100vh;
       padding: 15px;
-      opacity: .9;
-      transform: translateX(-210px);
+      opacity: .95;
+      transform: translateX(-400px);
       transition: transform .5s ease-in-out;
    }
 
    .nav-bar.show ul{
+      padding-top: 10vh;
       transform: translateX(0px);
       transition: transform .5s ease-in-out;
    } 
 
    .nav-bar ul li a{
+      font-size: 21px ;
       color:hsl(213, 9%, 39%) ;
    }
 
@@ -374,44 +417,12 @@ footer ul li a:hover{
       color: white;
    }
 
-   .attribution{
-      text-align: center;
-   }
+   
 }
 
 @media (max-width: 500px){
 
 
-   header{
-      background-image: url(./images/mobile/image-header.jpg);
-      background-position: 100%;
-      background-repeat: no-repeat;
-      background-size: 100% 100%;
-      width: 100%;
-      height: 80vh;
-      
-   }
-
-   header h1{
-      font-size: 35px ;
-      margin-top: 80px;
-      text-align: center;
-      letter-spacing: 10px;
-      color: white;
-
-   }
-
-   .arrow-img{
-      display:flex;
-      justify-content: center;
-      align-items: center;
-   }
-  
-   .arrow-img img{
-      margin-top: 50px;
-      height: 85px;
-      width:30px;
-   }
 
    .services{
       display: grid;
@@ -422,17 +433,20 @@ footer ul li a:hover{
     }
 
    .services h2{
+      margin-top: 20px ;
       text-align: center;
-      font-size: 1.8rem;
+      font-size: 2.2rem;
     }
 
     .services p{
       text-align: center;
+      font-size: 22px;
     }
 
     .services a{
       display: flex;
       justify-content: center;
+      font-size: 20px;
       
     }
 
@@ -468,7 +482,7 @@ footer ul li a:hover{
    }
 
    .item-5{
-      padding: 90% 18% 0 18%;
+      padding: 80% 7% 0 7%;
       background-image: url(./images/mobile/image-graphic-design.jpg);
       background-position: 100%;
       background-repeat: no-repeat;
@@ -476,8 +490,13 @@ footer ul li a:hover{
       height: 85vh;
    }
 
+   .item-5 h3, .item-6 h3{
+      margin-top: 120px;
+      font-size: 25px;
+   }
+
    .item-6{
-      padding: 90% 18% 0 18%;
+      padding: 90% 7% 0 7%;
       background-image: url(./images/mobile/image-photography.jpg);
       background-position: 100%;
       background-repeat: no-repeat;
